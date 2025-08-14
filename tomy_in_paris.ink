@@ -247,7 +247,7 @@ Oh peu cher, en voilà une bonne réponse! Les parigots vont pas la faire à des
 
 # IMAGE: ../images/pigeon.png
 
-Tu erres, la bourse vide et le cœur lourd, parmi les mornes allées du jardin du Luxembourg, où les feuilles bruissent et se moquent de ton sarouel en lambeaux. <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:https:\/\/www.youtube.com/watch?v=AFC_ATRExsA&ab_channel=georgesbrassens">Les bancs verts</a> se courbent sous tes fesses amaigris, les statues te toisent avec mépris et les pigeons te chassent à grandes envolées.
+Tu erres, la bourse vide et le cœur lourd, parmi les mornes allées du jardin du Luxembourg, où les feuilles bruissent et se moquent de ton sarouel en lambeaux. <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https::\/\/www.youtube.com/watch?v=AFC_ATRExsA&ab_channel=georgesbrassens">Les bancs verts</a> se courbent sous tes fesses amaigris, les statues te toisent avec mépris et les pigeons te chassent à grandes envolées.
 
 + ...
 
@@ -528,21 +528,21 @@ Bienvenu au parc de la Villette, lieu de vilégiature de la jeunesse dorée pari
 "Paris est une fête!" disait Hemingway, mort d'avoir trop fait la noce. Emboitons-lui donc le pas pour faire de chaque jour le climax d'une odyssée sans destination! Sous les pavés grondent les slogans d'une foule qui approche alors que tu siffles un allongé sur les grands boulevards. Une syndicaliste chevronnée sort du café une pancarte à la main en chantant <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=Qr6u3NADKxQ&ab_channel=ClaudeLQ">"Le temps des cerises"</a>.
 
 + Tu lui emboîtes le pas et te joins au cortège.  -> mnfst
-+ Sans moi! Plus me plaît l'hédonisme décadent que les bannières qui claquent au vent. -> hdnsm
++ [Sans moi! Plus me plaît l'hédonisme décadent que les bannières qui claquent au vent.] -> hdnsm
 
 === mnfst ===
 
 Tu te saisis du foulard que te tend une inconnue pour rejoindre la marée qui monte et défier le vrombissement des drones qui rasent les têtes à toute allure. Le flot poursuit sa course au son des batucadas et des tirs de LBD. Ton individualité t'échappe au fur et à mesure que gonflent les chants dans ta poitrine si longtemps esseulée et c'est d'un cri terrible que retentit ta colère libre et déchaînée, enfin. Lorsque vous parvenez à l'épicentre de toutes les luttes, la place de la République, de savamment placés récifs vous attendent. Vous échouez malgré vous contre une barricade que tient une milice surarmée mais dans la confusion, tu aperçois une ouverture par laquelle échapper à la nasse. 
 
 + Tu t'engouffres avant que la situation ne dégénère.  -> fte
-+ Hors de question de fuir face aux hommes de main du régime, ton sort ne sera pas différent de celui de tes camarades! -> rsstnc
++ [Hors de question de fuir face aux hommes de main du régime, ton sort ne sera pas différent de celui de tes camarades!] -> rsstnc
 
 === fte ===
 
 C'était juste! Le rang de CRS se referme d'un claquement sourd dans ton dos, une fraction de seconde après ton passage. Derrière toi résonnent les cris des manifestants que l'on prive d'air et de droits. Cramponé à cette terreur sourde que suscite la perspective d'un coup porté par quelqu'un que tu paies,
 
-+ tu t'abrites dans la première laverie que tu trouves. -> lvmtic
-+ tu cours à perdre haleine. -> stdns
++ [Tu t'abrites dans la première laverie que tu trouves.] -> lvmtic
++ [Tu cours à perdre haleine.] -> stdns
 
 === lvmtic ===
 #CLEAR
