@@ -1,0 +1,663 @@
+# theme: dark
+# title: A Parisian gamebook 
+# author: Ileyk
+
+# IMAGE: ../images/cover.png
+
+Te voilà arrivé dans la Ville Lumière, celle dont l'interrupteur sautille frénétiquement. A peine descendu de l'avion, tu savoures déjà le parfum des viennoiseries et celui, autrement plus légendaire, des effluves des parisiens. Mais ton aventure ne fait que commencer! Où donc poseras-tu ton barda dans cette cité où tant d'autres t'ont précédé? # CLASS: showTop
+
+-> paris
+
+=== paris ===
+
+En guise de murailles, Paris s'est affublée d'un périphérique dont le traffic encombré fait la joie des automobilistes. Elle ceint le cœur de la ville dont les dimensions raisonnables contrastent avec la vaste étendue de banlieues qui l'entourent. En cette belle journée ensoleillée, de quelle humeur te sens-tu?
+
++ [Intra muros] -> intra
++ [Extra muros] -> extra
+
+=== intra ===
+
+# IMAGE: ../images/intra.png
+
+Excellent choix, on est jamais mieux lotis qu'à l'intérieur de la forteresse! À moins qu'il ne s'agisse en fait d'une cage? 🤔 Nous verrons bien mais pour l'instant, choisissons plutôt une rive sur laquelle se promener. Pour info, elles doivent leur nom au côté sur lequel elles se situent lorsque tu descends la Seine (i.e. d'Est en Ouest à Paris), <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=XP6i5jQaXcs&ab_channel=Kaamelott">bien que personne n'y ait jamais vraiment rien compris</a>.
+
+~ temp ppxl = RANDOM(0,10)
+{ ppxl<2 :
++ [Hein quoi?] -> hn
+}
++ [Rive gauche] -> rv_gch
++ [Rive droite] -> rv_dte
+
+=== hn ===
+
+Bon, disons que tu vivras le cul entre deux chaises. Ça tombe bien parce qu'au cœur de Paris, la Seine se scinde en deux bras qui s'enlacent autour de l'île Saint-Louis à l'Est, et de l'île de la Cité dont la pointe Ouest est un lieu prisé par ceux qui aiment voir le Soleil plonger sous le pont des Arts. Ce paysage insulaire et jadis marécageux a manifestement plu aux ancêtres des lutétiens puisque c'est sur l'île de la Cité qu'ils élirent domicile. Berceau historique de la capitale, elle abrite aujourd'hui un marché aux fleurs et aux oiseaux où l'on trouve les plus beaux spécimens vendus par des braconniers à la gouaille confidentielle. L’île Saint-Louis quant à elle jouit d'une ambiance nettement plus feutrée ; bordée de quais élégants et de demeures discrètes, elle s'étale dans le dos de Notre-Dame. Les ponts qui relient ces îles aux rives gauche et droite dessinent un réseau délicat où circulent touristes, citadins et trompettes.
+
+Pour quelle île opteras-tu?
+
++ [Celle en amont.] -> il_st_ls
++ [Celle en aval.] -> plc_dph
+
+=== il_st_ls ===
+#CLEAR
+
+# IMAGE: ../images/il_st_ls.png
+
+En été, l’île Saint-Louis crépite de fraîcheur dans les reflets scintillants de la Seine. Sur ses quais ombragés l'on savoure avec gourmandise une glace Malaga de chez Berthillon, le maître incontesté des glaciers parisiens. Le parfum dépravé du rhum te monte à la tête alors que tes papilles se délectent de la texture onctueuse des raisins plus si secs. Pour échapper à la chaleur moite, tu t'enfonces dans les caves séculaires des nombreux restaurants que compte l'île. Sous les voûtes séculaires, vestiges d'un temps où Rome n'était encore qu'une turbulente bourgade, l'on dîne à la lueur des bougies d'antan. Chez "Nos Ancêtres les Gaulois", tu trouveras cette atmosphère festive et anachronique, entre banquet celte et attrape-touriste, si prompt à remplir le plus ambitieux des estomacs. 
+
+-> ending
+
+=== plc_dph ===
+#CLEAR
+
+# IMAGE: ../images/plc_dph.png
+
+À quelques encablures des géôles du palais de Justice se trouve la place Dauphine où il fait bon siffler un Ricard entre amis l'été venu. Sa forme triangulaire se prêtait bien, autrefois, à la pétanque mais elle s'est depuis longtemps inclinée face à son homologue hipster, le Mölkky, un sport où l'on ne risque pas d'y laisser la phalange d'un orteil : nul malette dont le poids accablant ne provoquerait la sudation prématurée du joueur, nul cochonnet dont la fâcheuse tendance à se défausser frustre les plus enthousiastes. Seulement quelques quilles en bois finlandais sobrement numérotées, et <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=k5j9YmuCduw&pp=0gcJCdgAo7VqN5tD&themeRefresh=1">un sacré bout de bois</a>. Rien de tel pour l'apéro! Et en prime, ça nous épargne les néons criards du bowling.
+
+-> ending
+
+=== rv_gch ===
+
+Sur la rive gauche de Paris, le temps semble glisser doucement entre les feuillages des platanes qui bordent les grands boulevards et se penchent affectueusement sur les passants étourdis. Les bouquinistes alignés le long de la Seine étalent leurs trésors essouflés sous leur devanture, insensibles aux affres du temps. La ville s'étale au sud sur les vestiges d'ateliers, de moulins et de ruisseaux recouverts par les fantasmes d'architectes férus de tours en béton. Et pourtant, hier encore, la campagne y prenait ses aises, comme en atteste l'Observatoire de Denfert-Rochereau aujourd'hui rattrapé par la frénésie urbaine.
+
+Un vieil homme en guêtres, au dos courbé mais à l'éloquence intacte, t'aborde dans la rue :
+
+"Ah! <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=qLI8XeO2d0w&ab_channel=TelevisionenAsturias">Que d’or il faut, Seigneur, que d’or, pour ne point paraître gueux dans cette ville où l’on taxe jusqu’au soupir qu’on pousse!</a> Sans argent, point de festin, point de théâtre, point de parure — l’on n’est plus qu’un spectre rôdant aux abords des salons, flairant les plaisirs sans jamais les goûter. L’argent, Monsieur, c’est le passeport des belles compagnies, le sésame des soupers fins et des cœurs légers. Mais vous, dites-moi, avez-vous les moyens de vos ambitions, ou n’êtes-vous qu’un faiseur de dettes en habit de velours râpé ?"
+
+Tu lui réponds :
+
++ "Par ma foi, Monsieur, si l’or était une rivière, j’en serais le courant le plus vif!" -> mas
++ "Mieux que vos pistoles et vos rentes, j’ai l’éclat de la repartie, la finesse du trait et la liberté d’un cœur que n’achète nul banquier." -> menos
+
+=== rv_dte ===
+
+Ah, la rive droite! Vaste, fière, traversée de boulevards tracés au cordeau comme autant de cicatrices sur la peau d’une ville insurgée. Ici, chaque pavé semble avoir conservé l’écho d’un cri, d’un fusil, d’un espoir trop grand pour survivre à la semaine sanglante. Sous les ombres longues des immeubles haussmanniens, le rêve de la Commune palpite encore, en silence, dans les replis du bitume et les regards las des statues hagards. La mémoire de ces sombres jours hante ces places qui acouchèrent de tant de révolutions et de rêves. De ce côté-ci de la Seine, la foule vibre, palpite et s'engouffre dans les gares tentaculaires qui quadrillent la ville. Mais dans le murmure des pavés, sous le vacarme bienheureux des gens affairés, rôde un passé incandescent prêt à se rallumer d'un moment à l'autre.
+
+Un vieil homme en guêtres, au dos courbé mais à l'éloquence intacte, t'aborde dans la rue :
+
+"<a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=qLI8XeO2d0w&ab_channel=TelevisionenAsturias">Que d’or il faut, Seigneur, que d’or, pour ne point paraître gueux dans cette ville où l’on taxe jusqu’au soupir qu’on pousse!</a> Sans argent, point de festin, point de théâtre, point de parure — l’on n’est plus qu’un spectre rôdant aux abords des salons, flairant les plaisirs sans jamais les goûter. L’argent, Monsieur, c’est le passeport des belles compagnies, le sésame des soupers fins et des cœurs légers. Mais vous, dites-moi, avez-vous les moyens de vos ambitions, ou n’êtes-vous qu’un faiseur de dettes en habit de velours râpé ?"
+
+Tu lui réponds :
+
++ "Par ma foi, Monsieur, si l’or était une rivière, j’en serais le courant le plus vif!" 
+    Tant mieux pour toi très cher, car Paris ne fera guère de quartier à ta bourse!
+    -> mas
++ "Mieux que vos pistoles et vos rentes, j’ai l’éclat de la repartie, la finesse du trait et la liberté d’un cœur que n’achète nul banquier." 
+    "Parbleu mon ami, tu finiras sur la paille si tu t'entêtes!", te lance-t'il avant de s'évanouir dans la foule. 
+    Voyons tout de même où tu pourrais bien planter ta tente Quechua achetée en solde chez Decathlon.
+    -> menos
+
+=== mas ===
+
+# IMAGE: ../images/trcrn.png
+
+Sur ce, tu entres dans une librairie britannique où un vieil amiral borgne te tend de son seul bras valide un bicorne rapiécé.
+
++ [Tu t'en saisis et t'en coiffes aussitôt.] -> trcrn
++ [Tu le remercies mais t'abstiens de donner suite à son offre.] -> no_trcrn
+
+=== trcrn ===
+
+{ rv_gch: 
+-> prcp
+}
+{ rv_dte: 
+-> arc
+}
+
+=== prcp ===
+#CLEAR
+
+# IMAGE: ../images/prcp.png
+
+En route pour Odéon mon grognard! Au détour d'une ruelle étroite et pavée, tu t'engouffres dans le Procope où les mots ont longtemps résonné plus fort que les sabres. C’est ici, dans l’ombre feutrée des boiseries et sous les lustres de cristal, que Voltaire, Diderot, Rousseau et tant d’autres jardiniers vinrent planter les graines fécondes de la Révolution à venir. Entre deux caisses de Bourbon, Benjamin Franklin y esquissa les grandes lignes de la Constitution américaine, trempant sa plume dans l' encrier que les Lumières. Depuis 1686, ce sanctuaire culinaire sert la même tête de veau au regard torve, témoin muet d’idées qui elles non plus n’ont jamais cessé de mijoter. Le Procope est bien plus qu'un restaurant, c’est l'antichambre de l’insurrection bourgeoise, l'atelier de la subversion jacobienne et le supplice de l'Ancien Régime. Chaque assiette y porte encore l’écho d’un insolent pamphlet, chaque banquette garde la mémoire d’une impertinence lancée à la face des royalistes. Si tu en franchis le seuil, lève donc ton verre à l’esprit libre et critique des Lumières.
+
+-> ending
+
+=== arc ===
+#CLEAR
+
+# IMAGE: ../images/arc.png
+
+À l’aube du XIXe siècle, la première République vacille, trahie par des princes avides de revanche et prêts à tout pour retrouver leurs privilèges. Mais des cendres du tumulte révolutionnaire surgit un stratège de génie, un homme seul capable d’unir les volontés et de canaliser l’énergie d’un peuple en armes : Napoléon, dont l'initiale orne encore aujourd'hui nombre d'édifices parisiens. Sous son commandement, les soldats de l’an II deviennent les grognards de la Grande Armée, et les frontières de la France cessent d’être des lignes à défendre pour devenir des horizons à franchir. L’Europe chancelle sous le rythme implacable des bottes françaises alors que de Marengo à Austerlitz, l'on érige des bûchers aux ambitions impériales. Chaque victoire arrache la nation à l’isolement et lui forge un destin triomphale dans des lauriers souillés par le sang de millions de victimes. Joyau suprême des grands boulevards, l’Arc de Triomphe célèbre les héros des guerres napoléoniennes dont l'impénitente jouissance devait servir de modèle à la jeune nation pour les siècles à venir. Faisons ce qu'il faut pour lui enseigner l'humilité et éviter que ça n'Empire...
+
+-> ending
+
+=== no_trcrn ===
+
+Décidément, les gens sont fous dans cette ville! À quoi bon un couvre-chef quand on peut profiter de la pluie nu-tête?
+
+{ rv_gch: 
+-> rv_gch_no_trcrn
+}
+{ rv_dte: 
+-> rv_dte_no_trcrn
+}
+
+=== rv_gch_no_trcrn ===
+
+Aux terrasses des cafés, les étudiants au pied du mur récitent fébrilement leurs cours à voix basse, cernés de fatigue et de notes griffonnées qui, pas plus que leur café refroidi, ne les sauveront de la débâcle. Sous un lampadaire, une famille de touristes égarés cherchent leur chemin sans se soucier des talentueux pickpocket qui les délestent de quelques euros. Sous ses faux airs de carabin espiègle, le Quartier latin séduit, désoriente et parfois, dépouille — mais toujours avec grâce.
+
++ Tu suis les berges de la Seine. -> seine
++ Voyons plutôt ce qui se cache plus au sud, au-delà du Quartier latin. <> -> bvr
+
+=== seine ===
+
+Tu flânes sous les marronniers...
+
++ [... en fleurs.] -> bdbny
++ [... dépouillés par un hiver impitoyable.] -> wld
+
+=== bdbny ===
+#CLEAR
+
+# IMAGE: ../images/bdbny.png
+
+Dans les amphithéâtres qui bordent la Seine au pied de l'Institut du Monde Arabe, par cette douce soirée de juin, les corps s’animent et les cœurs s’échauffent au rythme endiablé de Bad Bunny et des grands classiques de la salsa. Les jupes légères tourbillonnent dans la lumière dorée du crépuscule, comme des pétales emportés par le vent d’été. Les talons claquent, les rires fusent et les pas s’enchaînent avec une joie contagieuse. C'est la folie dans cette guinguette caribéenne où les chorégraphies s'improvisent! Les mojitos et le reggaeton coulent à flot alors que les couples se forment et se défont à toute allure. Paris danse, libre et solaire, entre pavés et palmiers.
+
+-> ending
+
+=== wld ===
+#CLEAR
+
+# IMAGE: ../images/wld.png
+
+Ah, le Tea Caddy, ce ravissant petit refuge au chaud pour les amateurs éclairés d’authenticité britannique en terre gauloise! Niché à deux pas de Notre-Dame, ce salon de thé délicieusement suranné te transportera dans une Angleterre d’antan, où les boiseries craquent avec dignité et les tasses en porcelaine semblent sorties tout droit d’un cottage du Sussex. Les scones y sont tout simplement divins, servis tièdes avec leur cortège impératif de clotted cream et de confiture — un véritable antidote aux viennoiseries parisiennes par trop tapageuses. Le service, charmant à souhait, ajoute cette touche de retenue distinguée qui sied à tout établissement digne du comté de Kent. On y murmure plus qu’on y parle, l’on y savoure plus qu’on y consomme. En somme, c’est la cinquième colonne de la perfide Albion, là où le thé se sert en feuilles, jamais en sachets.
+
+-> ending
+
+=== bvr ===
+
+Tu escalades sans peine la montagne Sainte-Geneviève et arrives à la place de la Contrescarpe. Après un café vite avalé, tu descends la fameuse rue Mouffetard pour rejoindre les Gobelins là où, depuis son lit enseveli, le petit ruisseau qu'on appelle la Bièvre jalouse sa grande sœur à l'air libre.
+
+Au détour du square Le Gall, tu tombes sur un édifice sobrement intitulé le Palais du Peuple. Mais qui est donc son mégalomaniaque auteur?
+
++ [René Le Melec] -> brtgn
++ [Loïc Raison] -> brtgn
++ [Le Corbusier] -> crbsr
++ [Obi-Wan Kenobi] -> obwn
+
+=== obwn ===
+#CLEAR
+
+# IMAGE: ../images/obwn.png
+
+<a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:
+\/\/www.youtube.com/watch?v=N8NXiAfdrAA&ab_channel=LesGuignols-CANAL%2B">Perdu!</a>
+
+-> ending
+
+=== crbsr ===
+#CLEAR
+
+# IMAGE: ../images/crbsr.png
+
+Bien joué! Et tu en profites pour pousser jusqu'à la Cité Universitaire où tu découvres sa Maison du Brésil. Ode au <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.instagram.com/p/DGOOw61g_ji/?img_index=17&igsh=eGduZTI2eDdzeWU1">brutalisme</a>, elle offre enfin aux étudiants l'insigne honneur de vivre dans un bloc de béton nu mais signé de son nom, ce qui ne témoigne pas peu de la fine connaissance du genre humain qu'avait Le Corbusier. Chaque pilier s'y tient au garde-à-vous et chaque détail y est exclusivement mû par la sainte fonctionnalité, comme si l’ornement était un péché contre la rationalité. L’intérieur, quant à lui, respire cette chaleur affectueuse propre aux abris anti-atomiques. Car oui, chez Le Corbusier, c'est à l’homme de s’adapter au rythme mécanique du corps social, pas l’inverse. Un sacré fada!
+
+-> ending
+
+=== brtgn ===
+
+Pas loin, mais c'est pas tout à fait ça. Voyons voir si t'es meilleur en géographie.
+
+De quel pays l'île-de-France est-elle une région périphérique?
+
++ [La Cochinchine.] -> bbn
++ [La Bretagne.] -> mntprnss
++ [La Province.] -> prvnce
++ [Obi-Wan Kenobi.] -> obwn
+
+=== mntprnss ===
+#CLEAR
+XXX
+# IMAGE: ../images/mntprnss.png
+
+Excellente réponse, et voilà que s'ouvrent à toi les portes des secrets que renferment runes et menhirs. Après avoir fait plusieurs fois ravaler leur morgue à ces petits étrusques, les gaulois flanchèrent sous les assauts des légions romaines. Et pourtant, dans les forêts enchantés de cette péninsule où jamais la pluie ne s'arrête, les druides pratiquent encore leurs mystérieux rituels pour tenir à distance hipsters et digital nomads. De leur culture ne subsistent aujourd'hui que de rares vestiges enfouis dans les tréfonds de Brocéliande. Là-bas, ils ont été préservés par l'un des derniers peuples indigènes de l'Hexagone, dépossédé comme les autres par l'empire de son histoire, de sa langue mais pas de son sens du rythme. Qu'en témoignent <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=i6xPMxPWOWk&ab_channel=JulienGeorgy">loups, renards et beletters!</a> Justement, le train depuis Montparnasse ne tardera guère mais avant, nous avons tout juste le temps pour une bolée de cidre. Au pied de cette tour dont le charme écœurant n'est pas sans rappeler la Costanera, tu trouveras les meilleures galettes de sarrazin de la capitale, garnies à l'andouillette, aux noix de St Jacques ou au beurre salé, tandis que d'autres seront joyeusement flambées au Grand-Marnier. Embarque donc pour la côte où résonnent encore les accents gaéliques, <emph>kenavo ta!</emph>
+
+-> ending
+
+=== bbn ===
+#CLEAR
+XXX
+# IMAGE: ../images/bbn.png
+
+Bonne réponse! Et pourtant, que ne l'a-t'elle pas fait suer cette métropole ingrate. C'est au son de la Marseillaise que furent creusés les fosses communes d'Indochine, avant que les Rolling Stones ne prennent le relais. Ceux qui échappèrent au napalm et parvinrent à monter dans une embarcation furent accueillis avec cynisme par leurs tortionnaires qui s'en trouvèrent miraculeusement blanchis. Aujourd'hui, les échos de ces histoires résonnent encore sur les dalles du XIIIème arrondissement, des HLMs d'Olympiade aux tours de Maison-Blanche. Puisque l'on n'est jamais d'aussi bonne hummer que la bouche pleine, je t'invite à retrousser tes babines pour savourer un Bo Bun chez Phở 14, un canard laqué chez Tao Tao ou encore un durian saisi au vol dans la rue, pour les amateurs de sensations fort olfactives. Pour le reste, tu trouveras les ingrédients qu'il te faut chez Frères Tang. 享受您的美食吧!
+
+-> ending
+
+=== prvnce ===
+#CLEAR
+XXX
+# IMAGE: ../images/prvnce.png
+
+Oh peu cher, en voilà une bonne réponse! Les parigots vont pas la faire à des narvalos comme nous. Parce que dans nos villages de campagne, on n'a peut-être pas l'opéra mais on sait apprécier une chocolatine tout juste sortie de sa poche. Il n'y a plus guère qu'à la fête de l'Huma' qu'on retrouve l'esprit de terroir par ici... et à la Butte-aux-cailles! Une colline où ça gazouille entre fadas dans les ruelles, sur les terrasses et aux comptoirs qu'on ne lâche jamais bien longtemps, des fois qu'on perdrait l'équilibre. Les jours fériés, on y dans des rondeaux en veux-tu en voilà et le 14 Juillet, la Carmagnole ; on la préfère aux parades grand-guignolesques des Champs-Elysées. Chez Gladynes, tu trouveras de quoi te rassasier sans y laisser un bras : des saladiers remplis de gésiers, des magrets de canard suintants et des pommes de terre à l'ail qui rissolent jusque dans ta bouche... tout ce que le pays Basque peut offrir de mieux! Sans compter ses pichets bon marché qui se remplissent plus vite qu'ils ne se vident. Santé parbleu!
+
+-> ending
+
+=== menos ===
+
+{ rv_gch:
+-> rv_gch_poor
+}
+
+{ rv_dte:
+-> rv_dte_poor
+}
+
+=== rv_gch_poor ===
+
+# IMAGE: ../images/pigeon.png
+
+Tu erres, la bourse vide et le cœur lourd, parmi les mornes allées du jardin du Luxembourg, où les feuilles bruissent et se moquent de ton sarouel en lambeaux. <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:https:\/\/www.youtube.com/watch?v=AFC_ATRExsA&ab_channel=georgesbrassens">Les bancs verts</a> se courbent sous tes fesses amaigris, les statues te toisent avec mépris et les pigeons te chassent à grandes envolées.
+
++ ...
+
+    { shuffle:
+    - 
+    -> egts
+    - 
+    -> ctcmbs
+    }
+
+=== rv_dte_poor ===
+
+# IMAGE: ../images/tente.png
+
+Au pied du mur, il va bien te falloir trouver des compagnons de route avec qui casser la croûte ce soir. Ça tombe bien, il y a là de joyeux bougres avec qui tu devrais pouvoir t'entendre.
+
++ Tu suis un groupe de compagnons encapuchonnés qui chantonnent <emph>El pueblo unido</emph>. -> cpch
++ Tu acceptes l'invitation d'un punk à chien qui te propose de tirer sur sa pipe. -> pnks
++ Qu'il a l'air sympathique ce gentil bourgeois endimanché! -> brgs
+
+=== egts ===
+#CLEAR
+
+# IMAGE: ../images/egts.png
+
+Accablé, tu te précipites vers Port-Royal mais trébuches inopinément et te retrouves englouti par la gueule humide d’une bouche d’égouts! 
+
++ ...
+
+Ça sent tout drôle et entre tes pattes s'agitent des rongeurs dont les dimensions n'ont rien à envier à celle de leur homologue Pixar. Après tout, on n'y est pas plus mal qu'ailleurs et l'humidité à part, il fait plutôt bon.
+
+-> ending
+
+=== ctcmbs ===
+#CLEAR
+
+# IMAGE: ../images/ctcmbs.png
+
+Désorienté, tu suis une bande de spéléologues hirsutes qui te promettent monts et merveilles à l'abri des regards là-bas, sous la lourde trappe recouverte de verdure...
+
++ ...
+
+Mince alors, ça sent quand même drôlement le renfermé par ici. Et ça fait quelques temps que les hôtes n'ont pas passé le balai. Bonne pomme, tu leur sers le tibia sans rancune et poursuis ta route jusque dans les entrailles de Paris où tu ne manqueras pas de trouver un coin paisible et cosy. Après tout, on n'y est pas plus mal qu'ailleurs et au moins, tu seras à l'abri des intempéries.
+
+-> ending
+
+=== cpch ===
+
+Le groupe se scinde en deux : tu suis ceux qui ont la guitare ou ceux qui portent une lampe-torche à la ceinture?
+
++ [La guitare bien sûr!] -> cnl
++ [Qui peut bien avoir besoin d'une lampe-torche dans la Ville Lumière?...] -> cntr
+
+=== cnl ===
+#CLEAR
+
+# IMAGE: ../images/cnl.png
+
+Nimbé dans la lumière dorée du crépuscule, un groupe de jeunes trentenaires s’est installé au bord du canal Saint-Martin. Les accords résonnent à la guitare tandis qu'un vieux carton fait office de caisse claire dont le rythme endiablé fait danser jusqu'aux passants les plus réfractaires. Les rires fusent, les verres de vin se vident aussi vite qu'ils se remplissent et tous communient dans cette joyeuse énergie. Les guirlandes lumineuses suspendues à un arbre voisin vacillent doucement dans le vent d'ouest qui annonce les jours frais à venir. C’est un instant suspendu, de ceux qui sentent le pain encore tiède, les amitiés solides et les étés qui n’en finissent pas.
+
+-> ending
+
+=== cntr ===
+#CLEAR
+
+# IMAGE: ../images/cntr.png
+
+Le Soleil se couche mais le travail commence à peine pour <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:https:\/\/www.youtube.com/watch?v=86YEMo-fzmw&ab_channel=Thoughty2">les urbex</a> qui escaladent avec agilité un muret décrépi, leurs semelles raclant la pierre couverte de mousse. D’un geste rapide, l’un d’eux écarte une barrière grinçante, rouillée par les années, ouvrant un passage étroit vers les entrailles oubliées de la ville. Derrière eux, le murmure lointain de Paris s’efface, étouffé par les feuillages et le crépitement discret des graviers sous leurs pas. Le long des rails tordus de la Petite Ceinture, la végétation a repris ses droits, enlaçant traverses et ballast dans une lente reconquête. Chaque craquement fait tourner les têtes, mi-inquiets, mi-électrisés par le frisson de l’interdit. Ils avancent à tâtons, frontales prêtes, dans un mélange d’excitation juvénile et de respect silencieux pour ce no man’s land suspendu entre passé industriel et poésie urbaine. Un endroit paisible où passer la nuit!
+
+-> ending
+
+=== pnks ===
+#CLEAR
+
+# IMAGE: ../images/pnks.png
+
+Un choc brûlant envahit tes poumons, comme si une coulée de plomb fondu se déversait à l’intérieur. Ton cœur bondit, affolé et ravi, tandis qu’un bourdonnement aigu s'intensifie, assourdissant tout le reste. L’instant d’après, c'est au tour de ton cerveau d'être submergé par le souffle divin du vent alors que tu chevauches le dragon. Les contours s'effacent, les lumières vacillent et les couleurs explosent en des milliers de côtillons. Tu te réveilles en surplomb du périph' avec une gueule-de-bois sans pareille. Bienvenu à la colline du crack!
+
+-> ending
+
+=== brgs ===
+
+# IMAGE: ../images/brgs.png
+
+~ temp hour_rdm = RANDOM(0,23)
+~ temp mnts_rdm = RANDOM(11,59)
+
+Tu lui demandes l'heure et il te répond: "{hour_rdm}h{mnts_rdm}".
+
+{ (hour_rdm>21) || (hour_rdm<6) :
+    +[...] -> nt 
+- else:
+    +[...] -> jr
+}
+  
+=== nt ===
+#CLEAR
+
+"Je n'ai pas l'habitude d'adresser la parole aux mendiants de votre espèce à la nuit tombée, au revoir" te répond affectueusement ton nouvel ami. Curieux d'en apprendre plus sur ses us et coutumes, tu le suis jusqu'au bois de Boulogne où il s'engouffre non sans avoir au préalable nerveusement sondé les environs. La pudeur t'interdit d'en dire plus sur <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=dhBxQ2IzRn4&ab_channel=GeorgesBrassens-Topic">les activités auxquelles s'adonne l'honnête homme dans les buissons denses et touffus qui jalonnent la pelouse</a>, mais il t'aura au moins permis de trouver un petit coin sylvestre où poser ta tente, à l'abri des regards!
+
+-> ending
+
+=== jr ===
+
+Avec sa ravissante famille, ton nouvel ami poursuit sa route sans s'arrêter et <>
+{ shuffle:
+- pénètre dans le bois de Vincennes où le petit Jean-Eudes poursuit avec pugnacité les canards excédés par tant d'attention. Pourvu qu'il en attrape un!
++[...] -> vncnns
+- va rendre hommage à ses illustres ancêtres au Père-Lachaise, où il cherche coûte que coûte à troquer sa piteuse concession contre celle de Jim Morrison.
++[...] -> prlchs
+}
+
+=== vncnns ===
+#CLEAR
+
+# IMAGE: ../images/vncnns.png
+
+De ton côté, tu t'aventures dans les vastes douves du château de Vincennes, enfin un lieu où l'on ne te dérangera pas!
+
+-> ending
+
+=== prlchs ===
+#CLEAR
+
+# IMAGE: ../images/prlchs.png
+
+Sous les érables, tu devines <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/fr.wikipedia.org/wiki/Dialogues_de_b%C3%AAtes">un chat</a> qui se prélasse sur la tombe de Colette. Un peu plus loin, <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=bOyU_OzRXnM&ab_channel=EdBangerRecords">DJ Mehdi</a> a resorti ses platines, pas sûr que tu parviennes à fermer l'œil de la nuit si s'ouvre ce soir <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=ZIUoCc3Raa0&ab_channel=SamHaine">le bal des trépassés!</a>
+
+-> ending
+
+=== extra ===
+
+# IMAGE: ../images/extra.png
+
+Loin de l'étroitesse étouffante des appartements parisiens aux loyers absurdes, l'extra muros offre à qui ose franchir le périphérique un espace de vie bien plus humain. Là-bas, les logements respirent : une pièce en plus, un balcon, parfois même un jardin — autant de luxes devenus inaccessibles intra muros. Mais la banlieue, ce n’est pas seulement de l’espace, c’est aussi une vie locale foisonnante, rythmée par les marchés de plein air, les boucheries de quartier, les librairies indépendantes et les cafés où l’on te reconnaît après deux visites. C’est une ambiance de village dans un monde résidentiel ponctué de centres culturels et de squats, un tissu social chaleureux bien loin de l’anonymat pressé des grands boulevards. Pour un trentenaire en quête d’équilibre et de convivialité, c’est le lieu idéal! Et pendant que certains s’entassent à prix d’or pour être à dix minutes d’un métro, d’autres redécouvrent la qualité de vie et les mobilités douces.
+
+En parlant de transport, tu vas devoir prendre le RER où tu tombes nez à nez avec:
+
+ + [un sinistre pingouin dans son costume 3 pièces, la valise à la main, en route pour remplir on-ne-sait quel sordide contrat...]-> cdr
+ + [des parents au bout de leur vie, résignés à emmener leurs enfants se divertir dans l'attraction touristique la plus fréquentée de la région francilienne.] -> mck
+ + [un groupe de hipsters survoltés et absorbés dans leur conversation.] -> bnnt
+
+=== cdr ===
+ 
+# IMAGE: ../images/shaddy.png
+
+Le bougre marche vite, mais tu ne le quittes pas d'une semelle! Il planque son air louche sous un chapeau où tu crois reconnaître la trogne patibulaire d'un élu local... En même temps, c'est facile de critiquer mais t'es-tu déjà mis <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/jplusplus.github.io/the-accountant/\#/">dans la peau d'un maire soumis à la tentation des gros biffetons?</a>
+
+ + [oui] -> lvlls
+ + [non] -> dfsns
+ 
+=== bnnt ===
+
+# IMAGE: ../images/bnnt.png
+
+Leur accent traînant, leur vocubalaire élaboré et leur aisance corporelle ne laisse aucun doute : tu as mis la main sur de vrais bobos! Ils ont dévalisé les puces de Saint-Ouen pour se faire une garde-robe de seconde main qui mêle bon goût et simplicité. Aucun doute qu'ils tirent leur bon teint du panier bio que l'AMAP de Pernety leur livre chaque semaine. Ils s'échangent avec ferveur des nouvelles politiques, culturelles et quotidiennes d'un monde dont Paris est l'épicentre. Au moment où tu tends l'oreille, tu surprends des bribes de conversations relatives:
+
+ + [au dernier film de Ken Loach.] -> mls
+ + [aux ravages de la mondialisation.] -> lls
+ + [à la consommation récréative de psychotropes.] -> ivr
+ 
+=== dfsns ===
+#CLEAR
+
+# IMAGE: ../images/dfsns.png
+
+Quelle mauvaise langue je fais, il s'agissait en réalité d'un jeune employé modèle au service d'une licorne française tout ce qu'il y a de plus légal! À peine sorti de Grande Ecole et il œuvre déjà à la croissance effrénée de cette start-up dédiée à la structuration dynamique des flux de capitaux à l’échelle transnationale en vue d’une efficience fiscale consolidée de la valeur actionnariale. À quoi bon baigner dans la corruption et les combines mafieuses quand on peut blanchir des fortunes en plein jour, et non sans s'être au préalable rempli les poches avec d'avantageuses commissions : <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=NtTkHu8R2_Q&ab_channel=HDRetroTrailers"> "You make a killing in drugs. But in finance, you make an empire."<\a>
+
+-> ending
+
+=== lvlls ===
+#CLEAR
+
+# IMAGE: ../images/lvlls.png
+
+Mais oui, c'est Patrick Balkany! Il s'aperçoit que tu le suis mais peu rancunier, il t'invite à prendre un verre dans son fief, à Levallois-Perret. Par ici, nul besoin de s'encombrer de considérations légales car celui dont la carrière est un vibrant hommage aux <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=hor8dXNodns&t=1s&ab_channel=Gaumont">Tontons flingueurs</a> est entourée d'une ribambelle d'avocats, de comptables et de notaires tous plus talentueux les uns que les autres. Au fond, la loi n'est rien d'autre que l’outil par lequel les rapports de pouvoir s’inscrivent dans les institutions : un vecteur d'ordre pour les pauvres, et de liberté pour les riches. Et à l'ouest de Paris, on respire un air de liberté décomplexée!
+
+-> ending
+
+=== mls ===
+#CLEAR
+
+# IMAGE: ../images/mls.png
+
+Direction Montreuil, la nouvelle banlieue branchée de l'Est parisien! À peine sorti du métro, tu humes avec gourmandise l'odeur des makrouds de la boulangerie "Le César". Une rom te demande un ou deux euros mais tu n'as pas le temps de t'arrêter car avec tes nouveaux amis, vous êtes en retard pour la séance de 18h au Méliès, le ciné d'art et d'essai qui fait l'angle. Grâce au budget culturel généreux alloué par la mairie communiste, tu vas pouvoir savourer pour une bouchée de pain <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=Y0H1TAbHykE&ab_channel=Lumi%C3%A8reBenelux">un drame psychologique des années 60 dont le paysage évoque la douceur estivale et le titre, le chlore</a>. Tu te laisses porter par la langueur érotique de Romy Schneider et l'énergie virile d'un Alain Delon jeune et fringant... ça sent déjà les vacances sur la Côte d'Azur! 
+
+-> ending
+
+=== lls ===
+#CLEAR
+
+# IMAGE: ../images/lls.png
+
+Direction Les Lilas, où tes nouveaux amis t'emmènent dans un squat anti-fasciste où des exilés traqués par les forces de l'ordre ont trouvé refuge. L'effervescence du lieu contraste avec le peu de moyens dont il dispose : ici, chacun met la main à la pâte pour assurer le bon fonctionnement de la communauté, l'espace de quelques mois, le temps que les spéculateurs et leurs milices ne reprennent la main sur le lieu et n'expulsent manu militari les habitants. Tu sirotes un bissap en entrant dans le local où se tient l'assemblée générale qui décidera des orientations à prendre et t'invitera à te porter volontaire pour participer à la lutte. Dans cette enclave libertaire, tu rencontres enfin des gens curieux d'en apprendre plus sur la situation politique et économique chilienne. Bienvenu parmi les tiens camarade!
+
+-> ending
+
+=== ivr ===
+#CLEAR
+
+# IMAGE: ../images/ivr.png
+
+Direction le Kilowatt dont les caissons de basse font vibrer l'air dans tout Vitry! Cette nuit, <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.instagram.com/soeursmalsaines/">les sœurs malsaines</a> ont élu domicile sous le chapiteau où elles vont mettre le feu au dancefloor avec un code de conduite et des sets techno sans concession. Tiens-toi prêt parce que tu t'apprêtes à décoller pour Jupiter, surtout si tu avales une de ces pastilles que te tendent tes nouveaux amis...
+
+-> ending
+ 
+=== mck ===
+#CLEAR
+
+# IMAGE: ../images/mck.png
+
+Direction Disneyland Paris! Le royaume enchanté où s'élèvent les châteaux en plastique et les fast foods nord-américains. Tout y respire la magie sous cellophane et la féerie calibrée dans un décor où même les nains sont sponsorisés par Coca. Tandis que les visiteurs déambulent émerveillés dans une version édulcorée du rêve américain, des employés en costume transpirent derrière leurs masques souriants, enchaînant les journées à horaires décalés pour des salaires dignes d’un conte de Grimm. Ici, Blanche-Neige vend des peluches et Mickey se fait l'ambassadeur d'un impérialisme culturel souriant. On en ressort les bras chargés de souvenirs made in China, avec l’étrange impression d’avoir été délesté d'un paquet d'oseille et pris pour un sacré con. Disney, "where dreams come true"...
+
+-> ending
+
+=== rv_dte_no_trcrn ===
+
+# IMAGE: ../images/rv_dte_no_trcrn.png
+
+Paris a beau être une vibrante métropole, sa rive droite recèle aussi de quelques lieux plus apaisés où l'on échappe volontiers à la frénésie urbaine. 
+
++ [Opteras-tu pour le calme et la tranquilité?]  -> oklm
++ [ou préfères-tu vivre pleinement l'expérience parisienne, en affronter les affres et en pomper l'essence?] -> fff
+
+=== oklm ===
+
+Sage décision, car le rythme effréné des habitants t'effraie déjà! Au fond, ce qu'il te manque le plus c'est... 
+
++ [... le charme discret d'un magnum de champagne sur un rooftop santiaguinin.]  -> mgnm
++ [... le chant des perruches qui fusent entre les branches des araucanias.] -> prrch
+
+=== mgnm ===
+#CLEAR
+
+# IMAGE: ../images/mgnm.png
+
+Alors comme ça, on veut vivre à Paris avec une bourse de thèse mais on aime le clinquant! Ça tombe bien, un vieux placard sous les combles vient de se libérer place Sainte-Catherine. Sur la pointe des pieds, debout sur les toilettes, tu peux apercevoir la flèche de Saint-Paul. Le studio est modeste mais tu es au cœur de Paris, à quelques stations à peine de Jussieu. Les mannequins se succèdent sur les trottoirs saturés de haute-couture, à en faire verdir de jalousie Milan et sa fashion week. Dommage que tu aies déjà payé ton loyer sinon tu pourrais encore t'offrir le luxe d'un café à Merci. Mais au moins, voici un quartier huppé où nulle aventure ne viendra perturber un quotidien bien huilé - à l'huile de truffe bien entendu. 
+
+-> ending
+
+=== prrch ===
+
+Ça tombe bien parce que Paris regorge d'espaces verts! Et autant te dire qu'avec douze fois moins de chiens par habitant, tu vas même pouvoir en profiter sans merde ni aboiement! On y apprécie la quiétude des bancs, les feuillages que le printemps rhabille et les oiseaux dont les chants rivalisent d'inventivité. Ici, pas besoin de document d'identité ni de fouille en règle pour entrer, tu peux même y déjeuner sur l'herbe ou y prendre l'apéro entre amis! Mais à chacun son style car sur la rive droite se trouvent des parcs :
+
++ [aux airs majestueux qui tressent des lauriers au romantisme du XIXème.]  -> bttchmt
++ [d'où la vue sur Paris est imprenable.] -> bllv
++ [où de vastes pelouses se succèdent entre des pavillons design d'où s'échappent mélodies et fumets.] -> vllt
+
+=== bttchmt ===
+#CLEAR
+
+# IMAGE: ../images/bttchmt.png
+
+Le parc des Buttes-Chaumont emportera donc ton adhésion! Fruit des grands travaux du baron Haussmann, ses collines sont faites des nombreux déblaiements dont la ville fût le théâtre au soir du IInd empire. Son dénivelé mettra tes mollets au supplice, surtout si tu gravis le monticule centrale au sommet duquel se trouve un belvédère néo-classique. Lorsqu'arrivent les beaux jours, l'on s'y quitte avec autant de ferveur que l'on s'y déclare sa flamme. Les frondaisons garnies des boulots offrent une couverture fort idoine où s'aimer à l'abri des regards, tout comme les branches entrelacées des nombreux buissons qui jalonnent le parc. Depuis le pont suspendu, tu pourras contempler le ballet des canards dans le lac où se précipitent les flancs escarpés du monticule. Heureux qui comme les riverains, jouit chaque jour d'un si beau jardin!
+
+-> ending
+
+=== bllv ===
+#CLEAR
+
+# IMAGE: ../images/bllv.png
+
+Le parc de Belleville remporte donc ton suffrage! Planté dans un quartier animé, il offre l'ombre et la fraîcheur qui siéent aux 3 jours de canicule annuels. Mieux, ses sous-bois regorgent de bancs propices à quelques instants de lecture à l'abri du tumulte ambiant. Au fur et à mesure que tu escalades ses pelouses en terrasse s'éloigne l'horizon, jusqu'à pouvoir admirer tout Paris depuis son sommet. D'ici, la capitale semble bien peu de choses, une fourmillère saisie dans la torpeur de ses toits où se prélassent de paresseux félins. Un carré de verdure idéal pour laisser le temps suspendre son envol...
+
+-> ending
+
+=== vllt ===
+#CLEAR
+
+# IMAGE: ../images/vllt.png
+
+Bienvenu au parc de la Villette, lieu de vilégiature de la jeunesse dorée parisienne! Dans cet immensité de verdure se trouvent la Philharmonie, le Zénith, le Trabendo, le Cabaret sauvage et nombre d'autres salles de concert où te trémousser sur les airs les plus entraînants du continent. Si l'envie te vient, tu trouveras à la Cité des Sciences et de l'Industrie des expositions qui vantent le Génie Français et le Triomphe-de-l'Homme-sur-la-Nature à peu de frais : grosses tuyères vrombissantes, coussins péteurs en réalité augmentée et l'iconique Grande Géode sauront te convaincre des bienfaits du progrès, envers et contre tout. Profite donc des pelouses pour piquer-niquer le long du canal en laissant glisser le temps et les péniches. Après tout, tu n'es pas si pressé...  
+
+-> ending
+
+=== fff ===
+
+"Paris est une fête!" disait Hemingway, mort d'avoir trop fait la noce. Emboitons-lui donc le pas pour faire de chaque jour le climax d'une odyssée sans destination! Sous les pavés grondent les slogans d'une foule qui approche alors que tu siffles un allongé sur les grands boulevards. Une syndicaliste chevronnée sort du café une pancarte à la main en chantant <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=Qr6u3NADKxQ&ab_channel=ClaudeLQ">"Le temps des cerises"</a>.
+
++ Tu lui emboîtes le pas et te joins au cortège.  -> mnfst
++ Sans moi! Plus me plaît l'hédonisme décadent que les bannières qui claquent au vent. -> hdnsm
+
+=== mnfst ===
+
+Tu te saisis du foulard que te tend une inconnue pour rejoindre la marée qui monte et défier le vrombissement des drones qui rasent les têtes à toute allure. Le flot poursuit sa course au son des batucadas et des tirs de LBD. Ton individualité t'échappe au fur et à mesure que gonflent les chants dans ta poitrine si longtemps esseulée et c'est d'un cri terrible que retentit ta colère libre et déchaînée, enfin. Lorsque vous parvenez à l'épicentre de toutes les luttes, la place de la République, de savamment placés récifs vous attendent. Vous échouez malgré vous contre une barricade que tient une milice surarmée mais dans la confusion, tu aperçois une ouverture par laquelle échapper à la nasse. 
+
++ Tu t'engouffres avant que la situation ne dégénère.  -> fte
++ Hors de question de fuir face aux hommes de main du régime, ton sort ne sera pas différent de celui de tes camarades! -> rsstnc
+
+=== fte ===
+
+C'était juste! Le rang de CRS se referme d'un claquement sourd dans ton dos, une fraction de seconde après ton passage. Derrière toi résonnent les cris des manifestants que l'on prive d'air et de droits. Cramponé à cette terreur sourde que suscite la perspective d'un coup porté par quelqu'un que tu paies,
+
++ tu t'abrites dans la première laverie que tu trouves. -> lvmtic
++ tu cours à perdre haleine. -> stdns
+
+=== lvmtic ===
+#CLEAR
+
+# IMAGE: ../images/lvmtic.png
+
+Tu te précipites dans ce refuge inespéré pour y tomber nez-à-nez avec 3 impassibles lave-ling entassés dans un réduit à faire pâlir de claustrophobie le plus précaire des étudiants parisiens. Le ronronnement paisble de l'une d'entre elles achève de te convaincre, s'il en était besoin, du sens de l'hygiène irréprochable de parisiens qu'une révolution ne saurait décourager de faire luir leurs guêtres. Drôle de contraste alors que dehors résonne le fracas de l'émeute que l'on réprime. Justement, s'insinue sous la porte les gaz asphyxiants réservés jadis aux tranchées. En reculant pour échapper à l'inéluctable, tu pousses le bouton démarage d'une machine vide qui te répond par un claquement sonore. Qu'elle n'est pas ta surprise quand tu réalises qu'il s'agissait d'un trompe-l'œil! En lieu et place du lave-linge se trouve en réalité une porte, désormais entrouverte, par laquelle s'écoulent d'autrement plus suaves vapeurs. Tu montes quatre-à-quatre les marches de l'escalier en colimaçon dissimulé derrière pour arriver dans l'un des meulleurs speak-easy de la ville où un serveur débonnaire se dandine sur une balançoire. "Un Hugo pour Monsieur?".
+
+-> ending
+
+=== rsstnc ===
+#CLEAR
+
+# IMAGE: ../images/rsstnc.png
+
+Ton dévouement à la cause t'honore, puisse-t'il susciter des vocations! En attendant, la rage que tu lis dans les yeux des thuriféraires fanatisés de la Vème ne laisse guère de doute quant à la suite des évènements. La pression monte au fur et à mesure que se resserre la nasse. Tu gardes la tête en l'ai pour respirer avec parcimonie le peu d'air que tes poumons comprimés peuvent encore contenir. C'est là que tu aperçois les fumigènes des antifas qui déploient leur bannière sur les toits. Las, une grenade lacère la scène, furtive mais sublime, avant de s'abattre lourdement sur un groupe de manifestants pris au piège. Le parfum âcre des lacrymos te monte au nez pendant que s'écoulent les vapeurs empoisonnées entre tes jambes fébriles. Une masse s'effondre à tes côtés dans un bruit sourd, atteint à bout portant par un projectile que vient de tirer le CRS qui te fait face, impatient de servir à nouveau l'Etat lorsque sera rechargé son lanceur de balles de défense. Tu t'accroupis auprès du malheureux pour t'assurer de la non-léthalité d'une réplique que tu peines à qualifier de proportionnée. Son sang s'écoule entre tes mains tremblantes et, grisé par l'odeur écarlate qui en émane, tu ne vois ni tes camarades se disperser, ni les condés charger la matraque à la main. Couvert de contusions, on te jette dans un panier à salades où te parviennent les retentissants échos d'un chant révolutionnaire entonné par une foule meurtrie mais digne. Paris n'a pas dit son dernier mot...
+
+-> ending
+
+=== stdns ===
+#CLEAR
+
+# IMAGE: ../images/stdns.png
+
+Tu t'arrêtes pour reprendre ton souffle au pied de la porte Saint-Denis et repense aux siècles qu'elle a traversés en silence pour se retoruver, contrite et perplexe, privée de la muraille qui jadis la ceignait. Par déférence, tu franchis son seuil pour remonter la rue animée qui mène à Gare de l'Est. Les lueurs du crépuscule rougissent les façades des nombreux cafés sur le point de se transformer en bars branchés. Sur ta gauche, tu surprends une arche sous laquelle se faufile une ruelle pavée. La rue des petites écuries t'ouvre ses portes avec le ravissement d'un pochtron qui croise un compagnon de boisson. Sonnez trompetters, chantez hautbois! Les cuivres du New Morning retentissent comme pour annoncer ton entrée triomphale. Tu jurerais avoir aperçu Dizzy Gillespie par la fenêtre... Allons-y, il sera toujours temps demain d'aller soigner ta gueule de bois juste en face, à la Ferme de Charles, avec un brunch mémorable.
+
+-> ending
+
+=== hdnsm ===
+
+# IMAGE: ../images/hdnsm.png
+
+Imperturbable, tu clopines gaiement quand surgit à l'improviste un énergumène à l'allure savante et au ton assomant. Il t'interpelle vertement depuis son scooter Yego:
+
+"Oh eh l'artiste, le génie du 7ème art! Quoique moi, vous savez, je ne crois pas qu'il y ait de bon ou de mauvais réalisateur. Moi, si je devais résumer ce qui rend vraiment une œuvre magistrale, ce serait, en un mot, le décorum. Oui, parce que le décorum, au fond, il est dans le film mais aussi dans la salle, parce qu'une salle sans décor, c'est comme une pellicule sans celluloïde, comme un fauteuil sans accoudoirs, comme une pyramide sans son sphinx voyez-vous. Et c'est assez curieuxde se dire que les moulures au plafond, le grand rideau rouge, même l'odeur du pop corn, ça façonne l'écrin dans lequel la pièce sera reçue. Parce que quand on a le goût des choses bien présentées, le goût des belles images, parfois, on ne trouve pas, en face, la salle qui vous donne envie de rester jusqu'au bout. Alors, ce n'est pas mon cas puisque moi, Dieu merci, j'ai trouvé la salle, j'ai trouvé l'écran, le décorum, et je dis merci, je dis bravo, parce qu'enfin, je suis dans mon élément! Et finalement, quand les gens s'étonnent de mon appétence pour le cadre, je leur dis "Venez, et croyez" et c'est pourquoi, aujourd'hui et maintenant, je vous propose d'embarquer dans mon porte-bagages vous, l'orfèvre de tant d'œuvres primées. Parce qu'un scooter aussi, comme un ascenseur, c'est du décorum en mouvement, c'est la salle qui se déplace vers le film et le film qui vous emmène ailleurs."
+
+Il te confond manifestement avec un autre, et le voyage risque d'être long...
+
++ [Qu'importe, j'aime vivre dangereusement.]  -> sctr
++ Tu prends prétexte d'un cours d'aqua poney pour lui fausser compagnie. -> brcps
+
+=== sctr ===
+
+Téméraire de ta part! Le monologue se poursuit sans interruption, aussi déterminé que le cours du Nil. Tes oreilles bourdonnent sous le casque et tu frémis à l'idée de te retrouver assis à ses côtés, fusse le temps d'une projection. Tu aperçois au sommet d'une colline un campanile nacré quand soudain, ton loquace chauffeur t'annonce que vous êtes arrivés.
+
++ Tu bondis en direction du salvateur sémaphore.  -> mntmrtr
++ [Au diable les échappatoires! C'est au pied du mur... que l'on voit le mieux le mur!] -> lxr
+
+=== lxr ===
+#CLEAR
+
+# IMAGE: ../images/lxr.png
+
+Quel sens de l'abnégation remarquable. Tu as bien fait car le bougre n'a pas menti, le Louxor en vaut la peine. Non seulement sa programmation n'a rien à envier à celle du Normandie ou du Biógrafo, loin s'en faut, mais son style seul suffit à insuffler le sens de l'aventure aux plus réservés des spectateurs. Dorures et clichées tout droit sortis d'une vision romanesque de l'Egypte antique s'y succèdent avec tant de lourdeur et de profusion que l'on croirait presque entendre claquer le fouet d'Indiana Jones sur les têtes des serpents apeurés. Comble du bonheur, to guide file à l'anglaise après avoir confusément invoqué un acte notarial à signer au burin. A toi les plaisirs égoïstes de la salle sombre où personne ne te verra descendre seule ta Ben & Jerry's cookie dough format famille en tendant des yeux humides vers les répliques édifiantes d'une Romy Schneider au sommet de son art.
+
+-> ending
+
+=== mntmrtr ===
+#CLEAR
+
+# IMAGE: ../images/mntmrtr.png
+
+C'était moins une! Tu laisses derrière toi les imprécations sans fin de ce scribe fou pour gravir la colline de Montmartre en quète de quiétude. Dans le parc peu fréquenté qui se cache derrière le Sacré-Cœur, tu tombes nez-à-nez avec la statue de Louise Michel qu'une bande de jeunes scouts, rejetons consanguins de dynasties bercées trop près du mur, arrosent de quolibets. Sur la place du Tertre, une caricaturiste te croque le portrait en papotant. Elle te dévoile une histoire depuis longtemps mise à l'index, le véritable acte de naissance d'une République bourgeoise, patriarcale, coloniale et finalement, filicide qui, de mêche avec les monarchistes et les nostalgiques de l'Empire,  précipita dans le néant les espoirs d'un monde meilleur. Elle te parle de la Commune et de ses sœurs provinciales, des canons de la Garde nationale, de la semaine sanglante et de la danse des bombes, avant de t'emmener boire un verre de rouge sur les vignes de Montmartre baignées d'une lueur crépusculaire.
+
+"Qui boit de ce vin là" dit-elle, perchée sur les épaules d'anonymes géants, "boit le sang des copains."
+
+-> ending
+
+=== brcps ===
+
+Allons plutôt faire la noce! Voyons voir ce qui pourrait faire l'affaire ce soir... Sur une échelle de 1 à Freddie Mercury, tu te mets combien en motivation:
+
++ [1]  -> psmtv
++ [ti'punch o' clock] -> dmcl
++ [grosse soirée]  -> grsssr
++ [Freddie Mercury] -> frdd
+
+=== psmtv ===
+#CLEAR
+
+# IMAGE: ../images/psmtv.png
+
+On va la jouer tranquille alors. Je te propose un verre rue de Lappe, chez Amazonas, le meilleur bar à cocktail goudou de Paris. Les titres éloquents des boissons ("Clitojito", "Gouines on the bitch", "Cuni Colada"...) sauront stimuler ton imagination comme il se doigt. Attention, ils sont tous plus corsés les uns que les autres... 
+
+-> ending
+
+=== dmcl ===
+#CLEAR
+
+# IMAGE: ../images/dmcl.png
+
+C'est parti pour mon favori! Bar d'été comme d'hiver, <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.facebook.com/profile.php?id=100048413726293">le Demain C'est Loin</a> (le DCL pour les intimes) ravira les amateurs de rhum et d'acras. Les serveurs y remplissent généreusement les verres, non sans prélever chaque fois quelques gouttes du précieux élixir. Dans la queue légendaire de ses toilettes, tu te fendras si bien la poire avec des inconnus que tu en oublieras jusqu'aux nécessités les plus fondamentales de ton métabolisme. Entre deux fermetures administratives, le DCL fait salle comble avec un public des plus éclectique. Là-bas, tu y croiseras celles et ceux qui incarnent, dans leur chair et dans leurs os, l'âme du plus authentique des quartiers parisiens, Ménilmontant. Les flics auront beau la provoquer en multipliant rondes et contrôles, l'on n'intimide pas si facilement la patronne. Sublime, Laure n'hésite pas à les chasser lorsqu'il le faut à grands coups de "Vendus! Pourritures! Lâches! Je le tiendrai jusqu'au bout le bar de ma grand-mère, que ça vous plaise ou non!". Ces bravardes auront coûté cher à Blondin, l'inénarable pilier du bar, parce qu'ici comme ailleurs, quand on lui tient tête, le régime se venge et <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.liberation.fr/societe/police-justice/un-homme-tue-par-balles-par-la-police-en-plein-coeur-de-paris-20230123_DVTR4DJTZVARHDOPU2XGAYRFPU/">ses supplétifs le couvrent</a>. Mais qu'importe, les bacchanales se poursuivront jusqu'au jour où, enfin, sera venu le temps de solder les comptes.
+
+-> ending
+
+=== grsssr ===
+#CLEAR
+
+# IMAGE: ../images/grsssr.png
+
+Alors comme ça, on se sent joueur, au risque de ne pas se lever demain matin? Franchissons le canal et alea jacta est! La rue Jean-Pierre Timbaud n'a qu'à bien se tenir car c'est un-à-un que tu vas en écoper les bars, d'Oberkampf jusqu'à la maison des métallos. Repère de trentenaires assoifés, il n'est pas rare qu'elle cède la place à ses normales passé minuit, où tu trouveras notamment le Nouveau Casino et l'International. Pense à t'enfiler un kebab supplément frites avant d'aller te coucher parce que le quartier en regorge et que ça t'aidera à éponger.
+
+-> ending
+
+=== frdd ===
+#CLEAR
+
+# IMAGE: ../images/frdd.png
+
+Mince, tu me fais peur... t'es bien sûr de toi? Bon, eh bah allons-y. Enfourchons un vélib et direction La Gare / Le Gore, lieu de perdition s'il en est. Joyau étincelant sur le chapelet de perles de la Petite Ceinture, l'ancienne gare vit désormais des nuits autrement plus funky que ne l'avaient imaginé ses promoteurs. Au rez-de-chaussée, les billeteries ont cédé la place à la crême de la scène jazz, un temple capitonné où le public est prié de se taire pendant les concerts. Une intention délicate mais somme toute bienvenue dans un lieu en apparence si destroy. Par contre, dans ses souterrains se trame une tout autre histoire... Descends donc l'escalier en colimaçon qui y mène et tu seras saisie par l'écho des basses sur les pierres voûtées. Sous les arches, dans l'ombre, s'agitent les disciples du Gore, férus de techno épurée. C'est l'heure de se siffler un club maté si tu veux tenir jusqu'à l'aube sans te mettre les stup' à dos.
+
+-> ending
+
+=== ending ===
+
++ Encore une fois?
+# RESTART
+-> END
