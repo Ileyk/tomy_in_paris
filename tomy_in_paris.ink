@@ -247,7 +247,7 @@ Oh peu cher, en voilà une bonne réponse! Les parigots vont pas la faire à des
 
 # IMAGE: ../images/pigeon.png
 
-Tu erres, la bourse vide et le cœur lourd, parmi les mornes allées du jardin du Luxembourg, où les feuilles bruissent et se moquent de ton sarouel en lambeaux. <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https::\/\/www.youtube.com/watch?v=AFC_ATRExsA&ab_channel=georgesbrassens">Les bancs verts</a> se courbent sous tes fesses amaigris, les statues te toisent avec mépris et les pigeons te chassent à grandes envolées.
+Tu erres, la bourse vide et le cœur lourd, parmi les mornes allées du jardin du Luxembourg, où les feuilles bruissent et se moquent de ton sarouel en lambeaux. <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=AFC_ATRExsA&ab_channel=georgesbrassens">Les bancs verts</a> se courbent sous tes fesses amaigris, les statues te toisent avec mépris et les pigeons te chassent à grandes envolées.
 
 + ...
 
@@ -315,7 +315,7 @@ Nimbé dans la lumière dorée du crépuscule, un groupe de jeunes trentenaires 
 
 # IMAGE: ../images/cntr.png
 
-Le Soleil se couche mais le travail commence à peine pour <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:https:\/\/www.youtube.com/watch?v=86YEMo-fzmw&ab_channel=Thoughty2">les urbex</a> qui escaladent avec agilité un muret décrépi, leurs semelles raclant la pierre couverte de mousse. D’un geste rapide, l’un d’eux écarte une barrière grinçante, rouillée par les années, ouvrant un passage étroit vers les entrailles oubliées de la ville. Derrière eux, le murmure lointain de Paris s’efface, étouffé par les feuillages et le crépitement discret des graviers sous leurs pas. Le long des rails tordus de la Petite Ceinture, la végétation a repris ses droits, enlaçant traverses et ballast dans une lente reconquête. Chaque craquement fait tourner les têtes, mi-inquiets, mi-électrisés par le frisson de l’interdit. Ils avancent à tâtons, frontales prêtes, dans un mélange d’excitation juvénile et de respect silencieux pour ce no man’s land suspendu entre passé industriel et poésie urbaine. Un endroit paisible où passer la nuit!
+Le Soleil se couche mais le travail commence à peine pour <a target="_blank" id="in-text-hyperlink" rel="noopener noreferrer" href="https:\/\/www.youtube.com/watch?v=86YEMo-fzmw&ab_channel=Thoughty2">les urbex</a> qui escaladent avec agilité un muret décrépi, leurs semelles raclant la pierre couverte de mousse. D’un geste rapide, l’un d’eux écarte une barrière grinçante, rouillée par les années, ouvrant un passage étroit vers les entrailles oubliées de la ville. Derrière eux, le murmure lointain de Paris s’efface, étouffé par les feuillages et le crépitement discret des graviers sous leurs pas. Le long des rails tordus de la Petite Ceinture, la végétation a repris ses droits, enlaçant traverses et ballast dans une lente reconquête. Chaque craquement fait tourner les têtes, mi-inquiets, mi-électrisés par le frisson de l’interdit. Ils avancent à tâtons, frontales prêtes, dans un mélange d’excitation juvénile et de respect silencieux pour ce no man’s land suspendu entre passé industriel et poésie urbaine. Un endroit paisible où passer la nuit!
 
 -> ending
 
